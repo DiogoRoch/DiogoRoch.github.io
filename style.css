@@ -97,6 +97,12 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
+}
+.bx-left-arrow-circle {
+    font-size: 3em;
+    color: #0984e3;
+    margin-right: 5px;
 }
 
 .footer {
