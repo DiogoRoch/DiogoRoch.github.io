@@ -85,6 +85,20 @@ body {
     color: #0984e3;
 }
 
+.about-container {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.about-text {
+    color: #636e72;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
 .footer {
     text-align: center;
     color: #636e72;
