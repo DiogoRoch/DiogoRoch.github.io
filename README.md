@@ -1,2 +1,1 @@
-# diogorocha.github.io
-My github portfolio.
+# Diogo Rocha Moreira github portfolio
