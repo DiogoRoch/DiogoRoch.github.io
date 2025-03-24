@@ -99,10 +99,17 @@ body {
     margin-bottom: 20px;
     text-align: justify;
 }
+
 .bx-left-arrow-circle {
     font-size: 3em;
-    color: #0984e3;
+    color: #636e72;
     margin-right: 5px;
+    transition: color 0.3s ease;
+}
+
+.bx-left-arrow-circle:hover {
+    cursor: pointer;
+    color: #0984e3;
 }
 
 .footer {
