@@ -61,6 +61,8 @@ body {
     font-weight: 500;
 }
 
+/* ====== Navigation (active page styling) ====== */
+
 .nav-container {
     border-top: 2px solid #f0f0f0;
     border-bottom: 2px solid #f0f0f0;
@@ -72,18 +74,66 @@ body {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .nav-links a {
+    position: relative;
     text-decoration: none;
     color: #2d3436;
     font-weight: 600;
-    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.12s ease;
+    outline: none;
 }
 
-.nav-links a:hover {
+/* Hover and focus */
+.nav-links a:hover,
+.nav-links a:focus {
     color: #0984e3;
+    background-color: rgba(9,132,227,0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
 }
+
+/* Active link — stands out visually */
+.nav-links a.active,
+.nav-links a[aria-current="page"] {
+    color: #ffffff;
+    background: linear-gradient(135deg, #0984e3 0%, #0466c8 100%);
+    box-shadow: 0 8px 20px rgba(4,102,200,0.18);
+    transform: translateY(-2px);
+}
+
+/* Small decorative underline that animates in for non-active links on hover */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    bottom: 6px;
+    height: 3px;
+    width: 60%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, rgba(9,132,227,0.8), rgba(4,102,200,0.8));
+    transition: transform 0.22s cubic-bezier(.2,.9,.2,1);
+    transform-origin: center;
+    pointer-events: none;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Keyboard focus visible */
+.nav-links a:focus {
+    box-shadow: 0 0 0 3px rgba(9,132,227,0.14);
+}
+
+/* ====== About ====== */
 
 .about-container {
     margin-bottom: 30px;
