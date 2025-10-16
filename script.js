@@ -30,7 +30,7 @@ const projects = [
       },
       {
         title: 'Predicting Psychological Outcomes of Digital Life: A Machine Learning Analysis on European Data',
-        image: 'resources/imgs/timed2.png',
+        image: 'resources/imgs/timed.png',
         desc : 'Prediction of psychological distress and time pressure questionnaire scores using decision tree-based ensemble ML regression models. The predictions were then interpreted using SHAP values to explore the effects of digitalization predictors on mental health and time experience.',
         tech : ['Python', 'Streamlit', 'Scikit-Learn', 'XGBoost', 'LightGBM', 'SHAP'],
         links: [
