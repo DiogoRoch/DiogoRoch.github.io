@@ -84,13 +84,13 @@ projects.forEach((p, i) => {
  * then show the one at `index`.
  */
 function showSlide(index) {
-  const slides = document.querySelectorAll(".project-card");
   const dots   = document.querySelectorAll(".slide-nav button");
+  const slides = document.querySelectorAll(".project-card");
 
-  slides.forEach(s => s.classList.remove("active-slide"));
   dots.forEach(d => d.classList.remove("active-dot"));
+  slides.forEach(s => s.classList.remove("active-slide"));
 
-  slides[index].classList.add("active-slide");
   dots[index].classList.add("active-dot");
+  slides[index].classList.add("active-slide");
   currentSlide = index;
 }
